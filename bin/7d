@@ -1,0 +1,17 @@
+#! /usr/bin/env node
+
+var cli = require('../lib/cli');
+var argv = require('optimist').argv;
+var api = require('../lib/api');
+var eyes = require('eyes');
+var metadata = cli.argv(argv);
+
+api.call(metadata, function (err, res) {
+	if (err) {
+		return cli.util.die(666, err);
+	}
+
+	eyes.inspect(res);
+	process.exit(0);
+});
+
