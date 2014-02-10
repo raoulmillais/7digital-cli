@@ -14,7 +14,11 @@ api.call(metadata, function (err, res) {
 		return cli.util.die(666, err);
 	}
 
-	inspect(res);
+	if (process.stdout.isTTY) {
+		inspect(res);
+	} else {
+		console.log(JSON.stringify(res));
+	}
 	process.exit(0);
 });
 
