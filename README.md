@@ -16,8 +16,8 @@ Install it via [npm](http://npmjs.org/)
 
 ### USAGE
 
-Create an ini file callled ~/.7drc with your API consumer key and secret or set
-the following environment variables `7D_CONSUMERKEY` and `7D_CONSUMERSECRET`.
+Set the following environment variables `_7D_API_CLIENT_CONSUMER_KEY` and 
+`_7D__API_CLIENT_CONSUMER_SECRET`.
 
     7d artist releases --artistId=1
 
