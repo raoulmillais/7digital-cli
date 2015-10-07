@@ -20,7 +20,7 @@
     "API"
   ],
   "author": "Raoul Millais",
-  "license": "BSD",
+  "license": "ISC",
   "devDependencies": {
     "tape": "~2.1.0"
   },
